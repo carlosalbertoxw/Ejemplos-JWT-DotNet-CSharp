@@ -8,7 +8,7 @@ namespace Ejemplos_JWT_DotNet_CSharp
 {
     public class JWT
     {
-        private static String key = "12345678901234567890";
+        private static String key = "1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890";
 
         public String createJWT(Int32 IdUser)
         {

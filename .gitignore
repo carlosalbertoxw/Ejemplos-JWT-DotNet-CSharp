@@ -1,0 +1,15 @@
+#Archivos
+*.orig
+
+#Carpetas
+[Bb]in/
+[Oo]bj/
+
+packages/
+.vs/
+
+UnitTestJWT/bin/
+UnitTestJWT/obj/
+
+Ejemplos-JWT-DotNet-CSharp/bin/
+Ejemplos-JWT-DotNet-CSharp/obj/
