@@ -18,7 +18,9 @@ namespace Ejemplos_JWT_DotNet_CSharp
             payload.Add("id", IdUser);
             //La validación de la expiración tiene 5 minutos mas de tiempo por eso al tiempo de expiración 
             //se le restan 4 para que solo quede con un minuto de tiempo de vida
-            payload.Add("exp", (Convert.ToUInt64(timeUnix)-(60 * 4)));
+            payload.Add("exp", (Convert.ToUInt64(timeUnix) - (60 * 4)));
+            payload.Add("iat", (Convert.ToUInt64(timeUnix) - (60 * 5)));
+            payload.Add("nbf", (Convert.ToUInt64(timeUnix) - (60 * 5)));
 
             JwtSecurityToken jst = new JwtSecurityToken(header,payload);
             JwtSecurityTokenHandler tokenHandler = new JwtSecurityTokenHandler();
